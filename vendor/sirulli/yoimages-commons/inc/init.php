@@ -6,6 +6,8 @@ if (! defined ( 'ABSPATH' )) {
 if ( ! defined( 'YOIMG_COMMONS_PATH' ) ) {
 
 	define ( 'YOIMG_COMMONS_PATH', dirname ( __FILE__ ) );
+	define ( 'YOIMG_SUPPORTED_LOCALES', 'en_US it_IT de_DE nl_NL' ); 
+	
 	require_once (YOIMG_COMMONS_PATH . '/utils.php');
 	
 	if (is_admin ()) {
@@ -14,12 +16,13 @@ if ( ! defined( 'YOIMG_COMMONS_PATH' ) ) {
 		
 		global $yoimg_plugins_url;
 		$yoimg_plugins_url = array (
-			'yoimages-crop' => 'http://TODO/yoimages-crop',
-			'yoimages-seo' => 'http://TODO/yoimages-seo'
+			'yoimages-crop' => 'https://github.com/sirulli/yoimages-crop',
+			'yoimages-seo' => 'https://github.com/sirulli/yoimages-seo'
 		);
 		
 		define ( 'YOIMG_DOMAIN', 'yoimg' );
-		load_plugin_textdomain ( YOIMG_DOMAIN, FALSE, plugin_basename ( YOIMG_COMMONS_PATH . '/languages/' ) );
+		define ( 'YOIMG_LANG_REL_PATH', plugin_basename ( YOIMG_COMMONS_PATH . '/languages/' ) );
+		load_plugin_textdomain ( YOIMG_DOMAIN, FALSE, YOIMG_LANG_REL_PATH );
 		
 		require_once (YOIMG_COMMONS_PATH . '/settings.php');
 	}

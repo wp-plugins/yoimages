@@ -7,6 +7,19 @@ function yoimgLoadCropThickbox(href, partial) {
 		} else {
 			jQuery('body').append(data);
 		}
+		jQuery('.yoimg-retina-crop-help').pointer({
+			pointerClass: 'wp-pointer yoimg-wp-pointer',
+			content : '<h3>' + jQuery('#yoimg-retina-crop-help-title').text() + '</h3> <p>' + jQuery('#yoimg-retina-crop-help-paragraph').text() + '</p>',
+			position : {
+				edge : 'left',
+				align : 'center'
+			}
+		});
+		jQuery('.yoimg-retina-crop-help').click(function(e) {
+			e.preventDefault();
+			jQuery(this).pointer('open');
+			return false;
+		});
 	});
 }
 
@@ -51,7 +64,7 @@ function yoimgExtendMediaLightboxTemplate(anchor1, anchor2, anchor3, anchor4) {
 function yoimgInitCropImage(doImmediateCrop) {
 	if (typeof yoimg_cropper_aspect_ratio !== 'undefined') {
 		function adaptCropPreviewWidth() {
-			var width = Math.min(jQuery('#yoimg-cropper-preview-title').width(), yoimg_cropper_min_width);
+			var width = Math.min(jQuery('#yoimg-cropper-preview-title').width(), yoimg_retina_crop_enabled ? (yoimg_cropper_min_width / 2) : yoimg_cropper_min_width);
 			jQuery('#yoimg-cropper-preview').css({
 				'height' : (width / yoimg_cropper_aspect_ratio) + 'px',
 				'width' : width + 'px'
@@ -172,6 +185,11 @@ function yoimgCropImage() {
 			jQuery('.message.yoimg-crop-smaller').show();
 		} else {
 			jQuery('.message.yoimg-crop-smaller').hide();
+		}
+		if (response.retina_smaller) {
+			jQuery('.message.yoimg-crop-retina-smaller').show();
+		} else {
+			jQuery('.message.yoimg-crop-retina-smaller').hide();
 		}
 		jQuery('#yoimg-cropper-wrapper .spinner').css('display', 'none');
 		jQuery(window).resize();

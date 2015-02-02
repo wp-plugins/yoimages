@@ -5,275 +5,276 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
 "Project-Id-Version: YoImages\n"
-"Language: de\n"
+"Language: en\n"
 
 #: 
 msgid "[title]"
-msgstr "[Titel]"
+msgstr ""
 
 #: 
 msgid "[post_type]"
-msgstr "[Typ]"
+msgstr ""
 
 #: 
 msgid "[site_name]"
-msgstr "[web_site_Name]"
+msgstr ""
 
 #: 
 msgid "[tags]"
-msgstr "[Tags]"
+msgstr ""
 
 #: 
 msgid "[categories]"
-msgstr "[Kategorien]"
+msgstr ""
+
+#: 
+msgid "[author_username]"
+msgstr ""
+
+#: 
+msgid "[author_firstname]"
+msgstr ""
+
+#: 
+msgid "[author_lastname]"
+msgstr ""
 
 #: 
 msgid "YoImages settings"
-msgstr "Yo!mages Einstellungen"
+msgstr ""
 
 #: 
 msgid "You do not have sufficient permissions to access this page."
-msgstr "Sie haben keine Rechte diese Seite zu sehen."
+msgstr ""
 
 #: 
 msgid "Crop qualities"
-msgstr "Ausschnitt Qualität"
+msgstr ""
 
 #: 
 msgid "SEO for images"
-msgstr "Bilder SEO"
+msgstr ""
 
 #: 
 msgid "Change image title"
-msgstr "Bild Titel verändern"
+msgstr ""
 
 #: 
 msgid "Image title expression"
-msgstr "Bild Titel Formel"
+msgstr ""
 
 #: 
 msgid "Change image alt attribute"
-msgstr "Bild alt verändern"
+msgstr ""
 
 #: 
 msgid "Image alt expression"
-msgstr "Bild alt Formel"
+msgstr ""
 
 #: 
 msgid "Change image file name"
-msgstr "Bild Feile Name verändern"
+msgstr ""
 
 #: 
 msgid "Image file name expression"
-msgstr "Bild Feile Name Formel"
+msgstr ""
 
 #: 
 msgid "Enter your cropping settings here below"
-msgstr "Bitte wähle ausschnitt Einstellungen hier"
+msgstr ""
 
 #: 
 msgid "Enter your images SEO settings here below"
-msgstr "Bitte wähle Bild SEO Einstellungen hier"
+msgstr ""
 
 #: 
 msgid "Supported expressions:"
-msgstr "benutzbar Formel"
+msgstr ""
 
 #: 
 msgid "Crop qualities value is not valid, using default:"
-msgstr "Ausschnitt Qualität Werte nicht gültig, standard wird benutzen sein "
+msgstr ""
 
 #: 
 msgid "Close"
-msgstr "beenden"
+msgstr ""
 
 #: 
 msgid "Current"
-msgstr "umlaufend"
+msgstr ""
 
 #: 
 msgid "This crop is smaller than expected, you may replace the original image for this crop format using the replace button on the left and then cropping it"
-msgstr "Dieser Ausschnitt ist kleiner als erwartet, bitte hinstelle das Bild für diesen Ausschnitt mit hinstelle Button nach links"
+msgstr ""
 
 #: 
 msgid "Crop cannot be generated because original image is too small, actual image size will be used, but you may want to replace the original image for this crop format using the replace button on the left"
-msgstr "Ein Fehler ist aufgetreten. Original-Bild ist zu klein für guten Bildzuschnitt. Bitte hinstelle das originelles Bild  mit hinstelle Button nach links wieder"
+msgstr ""
 
 #: 
 msgid "Crop not generated yet, use the crop button here below to generate it"
-msgstr "Ausschnitt noch nicht erzeugt, bitte drücke das Ausschnitt Button darunter um es zu erchaffen"
+msgstr ""
 
 #: 
 msgid "Crop preview"
-msgstr "Ausschnitt nansicht"
+msgstr ""
 
 #: 
 msgid "Replace image source for"
-msgstr "Bild zu hinstellen"
+msgstr ""
 
 #: 
 msgid "Replace"
-msgstr "hinstellen"
+msgstr ""
 
 #: 
 msgid "Restore original image source for"
-msgstr "Original-Bild instand setzen "
+msgstr ""
 
 #: 
 msgid "Restore"
-msgstr "Instand setzen"
+msgstr ""
 
 #: 
 msgid "Crop quality"
-msgstr "Ausschnitt Qualität"
+msgstr ""
 
 #: 
 msgid "Crop"
-msgstr "Ausschneiden"
+msgstr ""
 
 #: 
 msgid "The sizes listed below are the crop and resize formats defined by "
-msgstr "Die Größe hier sind Ausschnitt und die Größe ändern von Original-Bild festlegen von"
+msgstr ""
 
 #: 
 msgid "Width"
-msgstr "Breite"
+msgstr ""
 
 #: 
 msgid "Height"
-msgstr "Höhe"
+msgstr ""
 
 #: 
 msgid "Max Width"
-msgstr "Max. Breite"
+msgstr ""
 
 #: 
 msgid "Max Height"
-msgstr "Max. Höhe"
+msgstr ""
 
 #: 
 msgid "Type:"
-msgstr "Type:"
+msgstr ""
 
 #: 
 msgid "Hard cropped"
-msgstr "Fest Ausschnitt"
+msgstr ""
 
 #: 
 msgid "Resized"
-msgstr "Resized"
+msgstr ""
 
 #: 
 msgid "Hard cropped image"
-msgstr "Fest Ausschnitt Bild"
+msgstr ""
 
 #: 
 msgid "this image format contains only a part of the original image, it has fixed width and height so that the image ratio is fixed too, e.g. thumbnail in listings are cropped"
-msgstr "Dieses Bild enthält nur ein Teil des Original-Bild, es hast fest Breite und Höhe als dass Seitenverhältnis is auch fest, zum Beispiel Thumbnail sind ausschnitten"
+msgstr ""
 
 #: 
 msgid "Resized image"
-msgstr "Resized image"
+msgstr ""
 
 #: 
 msgid "this image format is not cropped but instead it is resized to fit the maximum available space, either in width or height, therefore this image ratio is not fixed"
-msgstr "Dieses Bild ist nicht ausschnitten. Die Grösse ist verändert um Maximum Raum zu füllen,  this image format is not cropped but instead it is resized to fit the maximum available space, deshalb Seitenverhältnis ist nicht fest."
+msgstr ""
 
 #: 
 msgid "doesn't define any additional image size using the standard Wordpress functions (<a href=\"http://codex.wordpress.org/Function_Reference/add_image_size\" target=\"_blank\">add_image_size</a> and <a href=\"http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size\" target=\"_blank\">set_post_thumbnail_size</a>)"
-msgstr "hat keine andere Bild Grösse mit standard Wordpress Funktion bestimmt (<a href=\"http://codex.wordpress.org/Function_Reference/add_image_size\" target=\"_blank\">Bild Grösse hinzufügen</a> und <a href=\"http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size\" target=\"_blank\">Thumbnail Grösse bestimmen</a>)"
+msgstr ""
 
 #: 
 msgid "Edit crop formats"
-msgstr "Bild Ausschneiden"
+msgstr ""
 
 #. Ma la spunta che abilita il crop praticamente abilita il plugin? cioè potrei usarlo solo per la parte SEO?
 #: 
 msgid "Crop settings"
-msgstr "Ausschnitt"
+msgstr ""
 
 #: 
 msgid "Enable"
-msgstr "Einschalten"
+msgstr ""
 
 #: 
 msgid "If checked cropping is active"
-msgstr "Wenn auswählt Ausschnitt ist einschaltet"
+msgstr ""
 
 #: 
 msgid "Comma separated list of crop quality values (100 best to 50 medium)"
-msgstr "Ausschnitt Qualität Werte"
+msgstr ""
 
 #: 
 msgid "If checked title will be replaced with the expression here below"
-msgstr "Wenn auswählt Bild Titel mit Title Formel hinstellen wird"
+msgstr ""
 
 #: 
 msgid "expression used to replace the title, accepted values are:"
-msgstr "Formel benutzt um Bild Titel zu hinstellen, verfügbar Werte sind:"
+msgstr ""
 
 #: 
 msgid "If checked alt will be replaced with the expression here below"
-msgstr "Wenn auswählt Bild alt mit alt Formel hinstellen wird"
+msgstr ""
 
 #: 
 msgid "expression used to replace the alt, accepted values are:"
-msgstr "Formel benutzt um Bild alt zu hinstellen, verfügbar Werte sind:"
+msgstr ""
 
 #: 
 msgid "If checked the filename will be replaced with the expression here below"
-msgstr "Wenn auswählt Bild Feile Name mit Feile Name Formel hinstellen wird"
+msgstr ""
 
 #: 
 msgid "expression used to replace the filename, accepted values are:"
-msgstr "Formel benutzt um Bild Feile Name zu hinstellen, verfügbar Werte sind:"
+msgstr ""
 
 #: 
 msgid "title expression is not valid, using default:"
-msgstr "Titel Formel nicht gültig, standard wird benutzen"
+msgstr ""
 
 #: 
 msgid "alt expression is not valid, using default:"
-msgstr "Alt Formel nicht gültig, standard wird benutzen"
+msgstr ""
 
 #: 
 msgid "filename expression is not valid, using default:"
-msgstr "File Name Formel nicht gültig, standard wird benutzen"
+msgstr ""
 
 #. context? non sono riuscita a trovarla..
 #: 
 msgid "Edit crop formats from full image"
-msgstr "Ausschnitt von Ursprünglichen Größe editieren"
+msgstr ""
 
 #: 
 msgid "Image sizes are defined by the current theme"
-msgstr "aktiv Thema bestimmt die Größe"
+msgstr ""
 
-#: 
+#:
 msgid "Retina cropping enabled"
-msgstr "Retina Ausschnitt einschalten"
+msgstr ""
 
-#: 
+#:
 msgid "This crop is too small to create the retina version of the image, you may replace the original image for this crop format using the replace button on the left and then crop it again."
-msgstr "Dieser Ausschnitt ist zu klein um retina Bild zu schaffen. Bitte hinstelle das Bild für diesen Ausschnitt mit hinstelle Button nach links und dann macht den ausschnitt wieder."
+msgstr ""
 
-#: 
+#:
 msgid "Retina friendly"
-msgstr "Retina Kompatibilität"
+msgstr ""
 
-#: 
+#:
 msgid "Flag to enable (enable this option if you are using a retina plugin that uses @2x as file naming convention when creating retina images from source - e.g. <a href=\"https://wordpress.org/plugins/wp-retina-2x/\" target=\"_blank\">WP Retina 2x</a>)"
-msgstr "Auswähle um es zu einschalten. (auswählen wenn Sie einen Plugin haben, der die Formel @2x um Feile Name zu setzen benutzt - z.B. <a href=\"https://wordpress.org/plugins/wp-retina-2x/\" target=\"_blank\">WP Retina 2x</a> )"
+msgstr ""
 
-#: 
-msgid "[author_username]"
-msgstr "[Autor_Benutzername]"
-
-#: 
-msgid "[author_firstname]"
-msgstr "[Autor_Name]"
-
-#: 
-msgid "[author_lastname]"
-msgstr "[Autor_Familienname]"
 

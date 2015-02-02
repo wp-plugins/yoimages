@@ -94,19 +94,8 @@ if ( $has_replacement ) {
 								}
 								$anchor_class = $is_current_size ? 'active' : '';
 								$anchor_href = yoimg_get_edit_image_url( $yoimg_image_id, $size_key ) . '&partial=1';
-								$yoimg_retina_crop_enabled_for_size = yoimg_is_retina_crop_enabled_for_size( $size_key );
 								?>
-								<a href="<?php echo $anchor_href; ?>" class="media-menu-item yoimg-thickbox yoimg-thickbox-partial <?php echo $anchor_class; ?>">
-									<?php
-									echo $size_key;
-									if ( $yoimg_retina_crop_enabled_for_size ) {
-										$retina_help = $is_current_size ? '<span class="dashicons dashicons-editor-help yoimg-retina-crop-help" data-code="f223"></span><span id="yoimg-retina-crop-help-title" style="display:none">' . __( 'Retina friendly', YOIMG_DOMAIN ) . '</span><span id="yoimg-retina-crop-help-paragraph" style="display:none">' . __( 'Retina cropping enabled', YOIMG_DOMAIN ) . '</span>' : '';
-									?>
-										<span title="<?php echo _e( 'Retina cropping enabled', YOIMG_DOMAIN ); ?>">(@2x<?php echo $retina_help; ?>)</span>
-									<?php
-									}
-									?>
-								</a>
+								<a href="<?php echo $anchor_href; ?>" class="media-menu-item yoimg-thickbox yoimg-thickbox-partial <?php echo $anchor_class; ?>"><?php echo $size_key; ?></a>
 						<?php
 							}
 						}
@@ -165,7 +154,7 @@ if ( $has_replacement ) {
 								
 								<div class="message error yoimg-crop-smaller" style="display:<?php echo $is_crop_smaller ? 'block' : 'none'; ?>;">
 									<?php //TODO ?>
-									<p><?php _e( 'This crop is smaller (%1$sx%2$s) than expected (%3$sx%4$s), you may replace the original image for this crop format using the replace button here below and then cropping it', YOIMG_DOMAIN ); ?></p>
+									<p><?php _e( 'This crop is smaller than expected, you may replace the original image for this crop format using the replace button on the left and then cropping it', YOIMG_DOMAIN ); ?></p>
 								</div>
 								
 								<div class="message error yoimg-crop-retina-smaller" style="display:<?php echo $is_crop_retina_smaller ? 'block' : 'none'; ?>;">

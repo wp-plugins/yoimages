@@ -3,8 +3,8 @@ Contributors: ferrbea, fagia
 Donate link: sirulli.org/yoimages
 Tags: images, image, SEO, enhancement, crop, tool
 Requires at least: 4.0
-Tested up to: 4.1
-Stable tag: 0.0.4
+Tested up to: 4.1.1
+Stable tag: 0.0.5
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,7 +51,7 @@ You are free to define metadata values by using fixed texts and the following va
 = Languages supported =
 
 * Primary: English
-* Translations: Italian, German, Dutch
+* Translations: Italian, German, Dutch, French
 
 Translations are managed with [poeditor.com](https://poeditor.com/projects/view?id=25799 "").
 
@@ -76,6 +76,7 @@ Feel free to report bugs or request new features [here](https://github.com/sirul
 
 Thanks to Fengyuan Chen for his [jQuery Image Cropper](http://fengyuanchen.github.io/cropper/) plugin.
 Thanks to [wp-fred](https://profiles.wordpress.org/wp-fred-1/) for the Dutch translations of the plugin.
+Thanks to [Maxime Lafontaine](http://www.maximelafontaine.net/) for the French translations of the plugin.
 
 
 = Source code =
@@ -96,6 +97,10 @@ YoImages source code is hosted on [GitHub](https://github.com/sirulli/yoimages).
 4. custom metadata values even on gallery creation
 
 == Changelog ==
+
+= 0.0.5 =
+* French translations, thanks to [Maxime Lafontaine](http://www.maximelafontaine.net/)
+* Tested up to Wordpress 4.1.1 
 
 = 0.0.4 =
 * Added SEO expressions related to the post author metadata: username, first name and last name

@@ -3,8 +3,8 @@ if (! defined ( 'ABSPATH' )) {
 	die ( 'No script kiddies please!' );
 }
 
-if (is_admin ()) {
-	
+if (is_admin () || php_sapi_name () == 'cli') {
+
 	define ( 'YOIMG_CROP_PATH', dirname ( __FILE__ ) );
 	
 	define ( 'YOIMG_DEFAULT_CROP_ENABLED', TRUE );
@@ -28,6 +28,7 @@ if (is_admin ()) {
 		require_once (YOIMG_CROP_PATH . '/extend-admin-media-lightbox.php');
 		require_once (YOIMG_CROP_PATH . '/extend-admin-post.php');
 		require_once (YOIMG_CROP_PATH . '/extend-admin-options-media.php');
+		require_once (YOIMG_CROP_PATH . '/extend-attachment-update.php');
 	}
 }
 function yoimg_crop_load_styles_and_scripts($hook) {
@@ -46,7 +47,11 @@ function yoimg_crop_load_styles_and_scripts($hook) {
 				update_user_option ( get_current_user_id (), 'media_library_mode', $mode );
 			}
 			if ('list' === $mode) {
-				wp_dequeue_script ( 'media' );
+				$version = get_bloginfo ( 'version' );
+				// issue https://wordpress.org/support/topic/findposts-is-not-defined
+				if (version_compare ( $version, '4.2.2' ) < 0) {
+					wp_dequeue_script ( 'media' );
+				}
 				wp_enqueue_media ();
 			}
 		} else {

@@ -10,14 +10,15 @@ if ( ! defined( 'YOIMG_COMMONS_PATH' ) ) {
 	
 	require_once (YOIMG_COMMONS_PATH . '/utils.php');
 	
-	if (is_admin ()) {
+	if (is_admin () || php_sapi_name () == 'cli') {
 	
 		define ( 'YOIMG_COMMONS_URL', plugins_url ( plugin_basename ( YOIMG_COMMONS_PATH ) ) );
 		
 		global $yoimg_plugins_url;
 		$yoimg_plugins_url = array (
 			'yoimages-crop' => 'https://github.com/sirulli/yoimages-crop',
-			'yoimages-seo' => 'https://github.com/sirulli/yoimages-seo'
+			'yoimages-seo' => 'https://github.com/sirulli/yoimages-seo',
+			'yoimages-search' => 'https://github.com/sirulli/yoimages-search'
 		);
 		
 		define ( 'YOIMG_DOMAIN', 'yoimg' );

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name: YoImages
+ * Plugin Name: YoImages Search
  * Plugin URI: http://sirulli.org/yoimages/
- * Description: Better image handling capabilities for Wordpress: image cropping tools and image SEO with automated metadata filling.
+ * Description: Better image handling capabilities for Wordpress: images search from royalty free image directories.
  * Version: 0.1.0
  * Author: Sirulli
  * Author URI: http://sirulli.org/
@@ -31,8 +31,6 @@ if (! defined ( 'ABSPATH' )) {
 	die ( 'No script kiddies please!' );
 }
 
-define ( 'YOIMG_PATH', dirname ( __FILE__ ) );
-require_once (YOIMG_PATH . '/vendor/sirulli/yoimages-commons/inc/init.php');
-yoimg_register_module( 'yoimages-crop', YOIMG_PATH, true );
-yoimg_register_module( 'yoimages-seo', YOIMG_PATH, true );
-yoimg_register_module( 'yoimages-search', YOIMG_PATH, true );
+define ( 'YOIMG_SEARCH_PLUGIN_PATH', dirname ( __FILE__ ) );
+require_once (YOIMG_SEARCH_PLUGIN_PATH. '/vendor/sirulli/yoimages-commons/inc/init.php');
+yoimg_register_module( 'yoimages-search', YOIMG_SEARCH_PLUGIN_PATH, true );
